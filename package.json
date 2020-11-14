@@ -1,0 +1,47 @@
+{
+  "name": "aoumi",
+  "version": "1.0.0",
+  "description": "Shopping application",
+  "main": "server.js",
+  "engine": {
+    "node": "13.11.0",
+    "npm": "6.13.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
+  },
+  "proxy": "http://localhost:5000",
+  "keywords": [
+    "Shopping",
+    "COD",
+    "Morocco"
+  ],
+  "author": "zimproduction",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^7.16.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.25",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^2.0.4",
+    "stripe": "^8.95.0",
+    "uuid": "^8.3.0",
+    "validator": "^13.1.1"
+  }
+}
